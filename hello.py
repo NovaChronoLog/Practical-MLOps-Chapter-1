@@ -1,7 +1,7 @@
 def add(x: int, y: int) -> int:
     """
     Adds two numbers
-    
+
     :param x: First number
     :type x: int
     :param y: Second number
@@ -11,5 +11,6 @@ def add(x: int, y: int) -> int:
     """
 
     return x + y
+
 
 print(add(1, 1))
