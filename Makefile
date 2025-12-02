@@ -6,3 +6,5 @@ test:
 	python3 -m pytest -vv --cov=hello test_hello.py
 format:
 	python3 -m black .
+clean:
+	rm -rf __pycache__ .pytest_cache .coverage
