@@ -1,6 +1,15 @@
 version: 0.2
 
 phases:
-  build:
+  install:
     commands:
-      - echo "Hello from CodeBuild"
+      - echo "Installing dependencies..."
+      - make install
+  code_quality:
+    commands:
+      - make lint
+      - make format
+  test:
+    commands:
+      - make test
+
