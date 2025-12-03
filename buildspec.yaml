@@ -5,11 +5,11 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - make install
-  code_quality:
+  pre_build:
     commands:
       - make lint
       - make format
-  test:
+  build:
     commands:
       - make test
 
